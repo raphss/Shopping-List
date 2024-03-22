@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="icon" href="./files/checklist.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h2>Lista de Compras</h2>
+
+    <input type="text" id="barraPesquisa" placeholder="Pesquisar..." oninput="filtrarLista()">
+
+    <p>Clique em um item para marcá-lo como comprado.</p>
+
+    <ul id="lista">
+        <li><span class="editable" onclick="marcarComoComprado(this)">Exemplo 1</span> <button class="btn btn-edit"
+                onclick="editarItem(this)">Editar</button><button class="btn btn-delete"
+                onclick="excluirItem(this)">Excluir</button></li>
+        <li><span class="editable" onclick="marcarComoComprado(this)">Exemplo 2</span> <button class="btn btn-edit"
+                onclick="editarItem(this)">Editar</button><button class="btn btn-delete"
+                onclick="excluirItem(this)">Excluir</button></li>
+    </ul>
+
+    <input type="text" id="novoItem" placeholder="Novo Item">
+
+    <button id="botaoAdicionar" onclick="adicionarItem()">Adicionar</button>
+
+
+    <footer id='footer'>
+    </footer>
+
+    <script>
+        document.getElementById('footer').innerHTML = `Copyright &copy; ${new Date().getFullYear()} Raphael Vilete`;
+    </script>
+
+
+</body>
+
+</html>

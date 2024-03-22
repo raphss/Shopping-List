@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 3vh 30vh;
+    background-color: #333;
+    font-size: 2.5vh;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+h2,
+#botaoAdicionar {
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 60vw;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+    padding: 2vh;
+    background-color: #202020;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn,
+#botaoAdicionar {
+    cursor: pointer;
+    padding: 2vh 4vw;
+    border: none;
+    border-radius: 5vh;
+    transition: background-color 0.3s ease;
+    margin: 2vh 1vw;
+    font-size: 2.5vh;
+}
+
+.btn:hover,
+#botaoAdicionar:hover {
+    opacity: 0.8;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+    color: white;
+    margin-left: 2vh;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+#botaoAdicionar {
+    margin: 1vh;
+    padding: 1.2vh 3vh;
+    font-size: 2.8vh;
+    border-radius: 1vh;
+    background-color: #585555;
+    border: 0.3vh solid #ccc;
+}
+
+.editable,
+#barraPesquisa,
+#novoItem {
+    border: 0.3vh solid #ccc;
+    padding: 2vh;
+    border-radius: 1.5vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2vh;
+    max-width: 70vw;
+    max-height: 10vh;
+    overflow: auto;
+    font-size: 2.5vh;
+    background-color: #202020;
+    color: whitesmoke
+}
+
+#barraPesquisa,
+#novoItem {
+    max-width: 58vw;
+}
+
+.comprado {
+    color: rgb(53, 196, 53);
+    text-decoration: line-through;
+}
+
+#footer {
+    font-size: 1.7vh;
+    bottom: 0%;
+    position: fixed;
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding: 2vh;
+    z-index: 0;
+}
+
+::placeholder {
+    color: rgba(245, 245, 245, 0.813)
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 2.5vh;
+        padding: 2vh;
+    }
+
+    p {
+        margin-top: 5vh;
+    }
+
+    ul,
+    #barraPesquisa,
+    #novoItem {
+        max-width: 85vw;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    li .btn {
+        width: 50%;
+        margin: 1vh;
+    }
+
+    #footer {
+        position: relative;
+        padding: 4vh 2vh 0vh 2vh;
+    }
+}
