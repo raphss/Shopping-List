@@ -45,11 +45,6 @@ li {
     font-size: 2.5vh;
 }
 
-.btn:hover,
-#botaoAdicionar:hover {
-    opacity: 0.8;
-}
-
 .btn-edit {
     background-color: #4CAF50;
     color: white;
@@ -112,6 +107,13 @@ li {
     position: relative;
     text-decoration: underline;
     color: inherit;
+}
+
+
+.btn:hover,
+#botaoAdicionar:hover,
+#historicoContainer a:hover {
+    opacity: 0.8;
 }
 
 #footer {
