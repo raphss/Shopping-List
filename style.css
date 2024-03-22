@@ -101,10 +101,10 @@ li {
 #footer {
     font-size: 1.7vh;
     bottom: 0%;
-    position: fixed;
+    position: relative;
     -ms-flex-item-align: center;
     align-self: center;
-    padding: 2vh;
+    padding: 4vh 2vh 0vh 2vh;
     z-index: 0;
 }
 
@@ -138,10 +138,5 @@ li {
     li .btn {
         width: 50%;
         margin: 1vh;
-    }
-
-    #footer {
-        position: relative;
-        padding: 4vh 2vh 0vh 2vh;
     }
 }
